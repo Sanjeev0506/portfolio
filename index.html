@@ -3,95 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sanjeev's Portfolio</title>
+  <title>Sanjeev // Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body>
+<body data-spy="scroll" data-target=".nav" data-offset="50">
   <div id="particles-js"></div>
 
-  <div class="content-wrapper">
-    <header class="hero-content" data-aos="fade-up">
-      <h1>Sanjeev Balasubramanian</h1>
-      <p class="tagline"><span id="typewriter-text"></span></p>
-      <a href="#projects" class="btn-primary">View My Work</a>
+  <main class="terminal-container">
+    <header class="intro-section" id="home">
+      <h1 class="glitch-title" data-text="Sanjeev Balasubramanian">
+        Sanjeev Balasubramanian
+      </h1>
+      <p id="typewriter-text" class="tagline"></p>
+      <a href="#projects" class="btn">View My Work</a>
     </header>
 
-    <section class="about" data-aos="fade-up">
-      <h2>About Me</h2>
+    <section class="about-section fade-up" id="about">
+      <h2>~$ about_me</h2>
       <p>
-        Hey! I’m Sanjeev — a tech enthusiast who loves building things that actually work. From web apps and backend systems to Generative AI and electronics, I enjoy mixing creativity with logic.<br><br>
-        With a background in Electronics and a passion for software, I’ve explored cloud computing, Python, C++, FastAPI, and DevOps tools. I love problem-solving, debugging, and making complex ideas simple.<br><br>
+        Hey! I’m Sanjeev — a tech enthusiast who loves building things that actually work. From web apps and backend systems to Generative AI and electronics, I enjoy mixing creativity with logic.
+        <br><br>
+        With a background in Electronics and a passion for software, I’ve explored cloud computing, Python, C++, FastAPI, and DevOps tools. I love problem-solving, debugging, and making complex ideas simple.
+        <br><br>
         Outside of coding, you’ll find me experimenting with design, new tech, or figuring out how things work under the hood. Clean, functional, purposeful — that’s how I like my projects.
       </p>
     </section>
 
-    <section class="details" data-aos="fade-up">
-      <h2 class="info-heading">Info</h2>
-      <ul class="detail-card">
-        <li><span>College:</span> Amrita Vishwa Vidyapeetham</li>
-        <li><span>Location:</span> Bangalore, India</li>
-        <li><span>4th Year ECE Student</span></li>
+    <section class="info-section fade-up" id="info">
+      <h2>~$ info</h2>
+      <ul>
+        <li><strong>College:</strong> Amrita Vishwa Vidyapeetham</li>
+        <li><strong>Location:</strong> Bangalore, India</li>
+        <li><strong>Role:</strong> 4th Year ECE Student</li>
       </ul>
+    </section>
 
-      <h2 style="margin-top: 40px;">Skills</h2>
+    <section class="skills-section fade-up" id="skills">
+      <h2>~$ skills</h2>
       <div class="skills-grid">
         <span>Python</span><span>C++</span><span>FastAPI</span><span>Docker</span>
-        <span>Git & GitHub</span><span>MySQL</span><span>Linux</span>
-        <span>WebSockets</span><span>HTML</span><span>CSS</span>
-        <span>JavaScript</span><span>Streamlit</span><span>AWS Basics</span>
-        <span>Problem Solving</span><span>Cloud Fundamentals</span>
-        <span>Networking Basics</span><span>UI/UX Design</span>
+        <span>Git</span><span>MySQL</span><span>Linux</span><span>WebSockets</span>
+        <span>HTML</span><span>CSS</span><span>JS</span><span>Streamlit</span>
+        <span>AWS</span><span>Problem Solving</span><span>Networking</span><span>UI/UX</span>
       </div>
     </section>
 
-    <section class="projects" id="projects" data-aos="fade-up">
-      <h2>My Projects</h2>
-      <div class="card-row">
-        <div class="project-card" onclick="window.open('https://github.com/Sanjeev0506/auction', '_blank')">
-          <img src="images/auction.png" alt="Auction App"/>
+    <section class="projects-section fade-up" id="projects">
+      <h2>~$ projects</h2>
+      <div class="project-grid">
+        <a href="https://github.com/Sanjeev0506/auction" target="_blank" class="project-card">
+          <img src="images/auction.png" alt="Auction App" />
           <h4>Auction App</h4>
-          <p>Real-time bidding platform with FastAPI, WebSockets, Docker & MySQL.</p>
-        </div>
-
-        <div class="project-card" onclick="window.open('https://instagrambio.streamlit.app/', '_blank')">
-          <img src="images/bio-generator.png" alt="Instagram Bio Generator"/>
+          <p>Real-time bidding with FastAPI, WebSockets, and Docker</p>
+        </a>
+        <a href="https://instagrambio.streamlit.app/" target="_blank" class="project-card">
+          <img src="images/bio-generator.png" alt="Instagram Bio Generator" />
           <h4>Instagram Bio Generator</h4>
-          <p>AI-powered Instagram bio generator using Together.ai & Streamlit.</p>
-        </div>
-
-        <div class="project-card" onclick="window.open('https://github.com/Sanjeev0506/aitrip', '_blank')">
-          <img src="images/trip-planner.png" alt="AI Trip Planner"/>
+          <p>AI-powered bios with Together.ai and Streamlit</p>
+        </a>
+        <a href="https://github.com/Sanjeev0506/aitrip" target="_blank" class="project-card">
+          <img src="images/trip-planner.png" alt="AI Trip Planner" />
           <h4>AI Trip Planner</h4>
-          <p>Plan optimized travel itineraries using AI recommendations.</p>
-        </div>
+          <p>Plan optimized trips using AI recommendations</p>
+        </a>
       </div>
     </section>
 
-    <section class="socials" data-aos="fade-up">
-      <h2>Connect With Me</h2>
-      <div class="social-icons">
-        <div class="social-item" onclick="window.open('https://www.linkedin.com/in/sanjeevb1412/', '_blank')">
-          <img src="icons/linkedin.png" alt="LinkedIn"/>
+    <section class="contact-section fade-up" id="contact">
+      <h2>~$ connect</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sanjeevb1412/" target="_blank" class="social">
+          <img src="icons/linkedin.png" alt="LinkedIn" />
           <span>LinkedIn</span>
-        </div>
-        <div class="social-item" onclick="window.open('https://github.com/Sanjeev0506', '_blank')">
-          <img src="icons/github.png" alt="GitHub"/>
+        </a>
+        <a href="https://github.com/Sanjeev0506" target="_blank" class="social">
+          <img src="icons/github.png" alt="GitHub" />
           <span>GitHub</span>
-        </div>
-        <div class="social-item">
-          <img src="icons/gmail.png" alt="Gmail"/>
+        </a>
+        <div class="social">
+          <img src="icons/gmail.png" alt="Gmail" />
           <span>sanjeevb0506@gmail.com</span>
         </div>
       </div>
     </section>
-  </div>
+  </main>
 
   <script src="js/script.js"></script>
-  <script>
-    AOS.init({ duration: 1000 });
-  </script>
 </body>
 </html>
