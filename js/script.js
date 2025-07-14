@@ -37,19 +37,41 @@ particlesJS("particles-js", {
     "retina_detect": true
 });
 
-const music = document.getElementById('bg-music');
-const musicToggle = document.getElementById('music-toggle');
+// Typewriter Effect
+const roles = [
+    "Web Developer",
+    "Backend & Cloud Enthusiast",
+    "Generative AI Explorer",
+    "Electronics Geek"
+];
 
-window.addEventListener('click', () => {
-    if (music.paused) music.play();
-}, { once: true });
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typeEl = document.getElementById('typewriter-text');
 
-musicToggle.addEventListener('click', () => {
-    if (music.paused) {
-        music.play();
-        musicToggle.textContent = "Sound Off";
+function type() {
+    const current = roles[roleIndex];
+    const text = current.substring(0, charIndex);
+
+    typeEl.textContent = text + "|";
+
+    if (!isDeleting) {
+        charIndex++;
+        if (charIndex > current.length) {
+            isDeleting = true;
+            setTimeout(type, 1000);
+            return;
+        }
     } else {
-        music.pause();
-        musicToggle.textContent = "Sound On";
+        charIndex--;
+        if (charIndex < 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+        }
     }
-});
+
+    setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
