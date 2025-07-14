@@ -201,27 +201,12 @@ header {
 .info-heading {
     position: relative;
     color: #e50914;
-    animation: glitch 1.5s infinite;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    /* glitch animation removed */
 }
 
-.info-heading::before,
-.info-heading::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-}
-
-.info-heading::before {
-    color: #0ff;
-    clip: rect(0, 900px, 0, 0);
-    animation: glitchTop 1.5s infinite linear alternate-reverse;
-}
-
-.info-heading::after {
-    color: #f0f;
-    clip: rect(0, 900px, 0, 0);
-    animation: glitchBottom 1.5s infinite linear alternate-reverse;
-}
 
 .skills-grid {
     display: flex;
