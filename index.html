@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjeev's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanjeev's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
-    <audio id="bg-music" loop>
-        <source src="audio/afterdark.mp3" type="audio/mpeg">
-    </audio>
-    <button id="music-toggle">Sound Off</button>
 
-    <div id="progress-bar"></div>
+  <div id="progress-bar"></div>
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+  </div>
 
-    <div class="loader" id="loader">
-        <div class="spinner"></div>
-    </div>
-
-    <header>
-        <div id="particles-js"></div>
-        <div class="hero-content">
-            <img src="images/profile.jpg" alt="Profile" class="profile-pic">
-            <h1>Sanjeev Balasubramanian</h1>
-            <p class="tagline">
-                <span class="glitch" data-text="Web Developer | Backend & Cloud Enthusiast | Generative AI Explorer | Electronics Geek">
-                    Web Developer | Backend & Cloud Enthusiast | Generative AI Explorer | Electronics Geek
-                </span>
-            </p>
-            <a href="#projects" class="btn-primary">View My Work</a>
-        </div>
-    </header>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Hey! I’m Sanjeev — a tech enthusiast who loves building things that actually work. From web apps and backend systems to Generative AI and electronics, I enjoy mixing creativity with logic.
+  <!-- About & Info -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hey! I’m Sanjeev — a tech enthusiast who loves building things that actually work. From web apps and backend systems to Generative AI and electronics, I enjoy mixing creativity with logic.
 
 With a background in Electronics and a passion for software, I’ve explored cloud computing, Python, C++, FastAPI, and DevOps tools. I love problem-solving, debugging, and making complex ideas simple.
 
-Outside of coding, you’ll find me experimenting with design, new tech, or figuring out how things work under the hood. Clean, functional, purposeful — that’s how I like my projects .</p>
-    </section>
+Outside of coding, you’ll find me experimenting with design, new tech, or figuring out how things work under the hood. Clean, functional, purposeful — that’s how I like my projects.</p>
+  </section>
 
-    <section class="details">
-         <h2 class="info-heading" data-text="Info">Info</h2>
+  <section class="details">
+    <h2 class="info-heading">Info</h2>
     <ul class="detail-card">
-        <li><span>College:</span> Amrita Vishwa Vidyapeetham</li>
-        <li><span>Location:</span> Bangalore, India</li>
-        <li><span>4th Year ECE Student</span></li>
+      <li><span>College:</span> Amrita Vishwa Vidyapeetham</li>
+      <li><span>Location:</span> Bangalore, India</li>
+      <li><span>4th Year ECE Student</span></li>
     </ul>
 
-        <h2 style="margin-top: 40px;">Skills</h2>
-        <div class="skills-grid">
-            <span>Python</span><span>C++</span><span>FastAPI</span><span>Docker</span>
-            <span>Git & GitHub</span><span>MySQL</span><span>Linux</span>
-            <span>WebSockets</span><span>HTML</span><span>CSS</span>
-            <span>JavaScript</span><span>Streamlit</span><span>AWS Basics</span>
-            <span>Problem Solving</span><span>Cloud Fundamentals</span>
-            <span>Networking Basics</span><span>UI/UX Design</span>
-        </div>
-    </section>
+    <h2 style="margin-top: 40px;">Skills</h2>
+    <div class="skills-grid">
+      <span>Python</span><span>C++</span><span>FastAPI</span><span>Docker</span>
+      <span>Git & GitHub</span><span>MySQL</span><span>Linux</span>
+      <span>WebSockets</span><span>HTML</span><span>CSS</span>
+      <span>JavaScript</span><span>Streamlit</span><span>AWS Basics</span>
+      <span>Problem Solving</span><span>Cloud Fundamentals</span>
+      <span>Networking Basics</span><span>UI/UX Design</span>
+    </div>
+  </section>
 
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="card-row">
-            <div class="project-card" onclick="window.open('https://github.com/Sanjeev0506/auction', '_blank')">
-                <img src="images/auction.png" alt="Auction App">
-                <h4>Auction App</h4>
-                <p>Real-time bidding platform with FastAPI, WebSockets, Docker & MySQL.</p>
-            </div>
+  <!-- Hero/Particle Section -->
+  <header>
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <h1>Sanjeev Balasubramanian</h1>
+      <p class="tagline"><span id="typewriter-text"></span></p>
+      <a href="#projects" class="btn-primary">View My Work</a>
+    </div>
+  </header>
 
-            <div class="project-card" onclick="window.open('https://instagrambio.streamlit.app/', '_blank')">
-                <img src="images/bio-generator.png" alt="Instagram Bio Generator">
-                <h4>Instagram Bio Generator</h4>
-                <p>AI-powered Instagram bio generator using Together.ai & Streamlit.</p>
-            </div>
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="card-row">
+      <div class="project-card" onclick="window.open('https://github.com/Sanjeev0506/auction', '_blank')">
+        <img src="images/auction.png" alt="Auction App"/>
+        <h4>Auction App</h4>
+        <p>Real-time bidding platform with FastAPI, WebSockets, Docker & MySQL.</p>
+      </div>
 
-            <div class="project-card" onclick="window.open('https://github.com/Sanjeev0506/aitrip', '_blank')">
-                <img src="images/trip-planner.png" alt="AI Trip Planner">
-                <h4>AI Trip Planner</h4>
-                <p>Plan optimized travel itineraries using AI recommendations.</p>
-            </div>
-        </div>
-    </section>
+      <div class="project-card" onclick="window.open('https://instagrambio.streamlit.app/', '_blank')">
+        <img src="images/bio-generator.png" alt="Instagram Bio Generator"/>
+        <h4>Instagram Bio Generator</h4>
+        <p>AI-powered Instagram bio generator using Together.ai & Streamlit.</p>
+      </div>
 
-    <section class="socials">
-        <h2>Connect With Me</h2>
-        <div class="social-icons">
-            <div class="social-item" onclick="window.open('https://www.linkedin.com/in/sanjeevb1412/', '_blank')">
-                <img src="icons/linkedin.png" alt="LinkedIn">
-                <span>LinkedIn</span>
-            </div>
-            <div class="social-item" onclick="window.open('https://github.com/Sanjeev0506', '_blank')">
-                <img src="icons/github.png" alt="GitHub">
-                <span>GitHub</span>
-            </div>
-            <div class="social-item">
-                <img src="icons/gmail.png" alt="Gmail">
-                <span>sanjeevb0506@gmail.com</span>
-            </div>
-        </div>
-    </section>
+      <div class="project-card" onclick="window.open('https://github.com/Sanjeev0506/aitrip', '_blank')">
+        <img src="images/trip-planner.png" alt="AI Trip Planner"/>
+        <h4>AI Trip Planner</h4>
+        <p>Plan optimized travel itineraries using AI recommendations.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <!-- Social Links -->
+  <section class="socials">
+    <h2>Connect With Me</h2>
+    <div class="social-icons">
+      <div class="social-item" onclick="window.open('https://www.linkedin.com/in/sanjeevb1412/', '_blank')">
+        <img src="icons/linkedin.png" alt="LinkedIn"/>
+        <span>LinkedIn</span>
+      </div>
+      <div class="social-item" onclick="window.open('https://github.com/Sanjeev0506', '_blank')">
+        <img src="icons/github.png" alt="GitHub"/>
+        <span>GitHub</span>
+      </div>
+      <div class="social-item">
+        <img src="icons/gmail.png" alt="Gmail"/>
+        <span>sanjeevb0506@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
