@@ -251,17 +251,16 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #00ff99;
   margin-bottom: 5px;
 }
 
-.company-link {
-  text-decoration: none;
+.experience-entry a {
   color: #33ff33;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-.company-link:hover {
+.experience-entry a:hover {
   color: #00ffcc;
 }
 
@@ -272,7 +271,7 @@ ul li {
 
 .role {
   font-weight: bold;
-  color: #00ffcc;
+  color: #00ff99;
   margin-bottom: 10px;
 }
 
@@ -281,6 +280,7 @@ ul li {
   color: #ccc;
   line-height: 1.5;
 }
+
 
 
 /* Scrollspy highlight effect (optional) */
