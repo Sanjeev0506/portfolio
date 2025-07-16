@@ -226,6 +226,62 @@ ul {
 ul li {
   margin-bottom: 10px;
 }
+.experience-section {
+  margin-top: 60px;
+}
+
+.experience-entry {
+  background: #1a1a1a;
+  border: 1px solid #33ff33;
+  padding: 20px 25px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(51, 255, 51, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.experience-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(51, 255, 51, 0.3);
+}
+
+.experience-entry h3 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00ff99;
+  margin-bottom: 5px;
+}
+
+.company-link {
+  text-decoration: none;
+  color: #33ff33;
+  transition: color 0.3s;
+}
+
+.company-link:hover {
+  color: #00ffcc;
+}
+
+.experience-entry span {
+  font-size: 0.9rem;
+  color: #66ff66;
+}
+
+.role {
+  font-weight: bold;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
 
 /* Scrollspy highlight effect (optional) */
 .nav a.active {
