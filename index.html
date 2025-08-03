@@ -2,25 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sanjeev // Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
 </head>
-<body data-spy="scroll" data-target=".nav" data-offset="50">
+<body>
   <div id="particles-js"></div>
 
-  <main class="terminal-container">
-    <header class="intro-section" id="home">
-      <h1 class="glitch-title" data-text="Sanjeev Balasubramanian">
-        Sanjeev Balasubramanian
-      </h1>
-      <p id="typewriter-text" class="tagline"></p>
-      <a href="#projects" class="btn">View My Work</a>
-    </header>
+  <header>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-section" id="home">
+      <p class="fade-up">Hi, my name is</p>
+      <h1 class="fade-up">Sanjeev Balasubramanian.</h1>
+      <p id="typewriter-text" class="tagline fade-up"></p>
+      <a href="#projects" class="btn fade-up">View My Work</a>
+    </section>
 
     <section class="about-section fade-up" id="about">
-      <h2>~$ about_me</h2>
+      <h2 class="section-title">01. About Me</h2>
       <p>
         Hey! I’m Sanjeev — a tech enthusiast who loves building things that actually work. From web apps and backend systems to Generative AI and electronics, I enjoy mixing creativity with logic.
         <br><br>
@@ -30,34 +40,22 @@
       </p>
     </section>
 
-    <section class="info-section fade-up" id="info">
-      <h2>~$ info</h2>
-      <ul>
-        <li><strong>College:</strong> Amrita Vishwa Vidyapeetham</li>
-        <li><strong>Location:</strong> Bangalore, India</li>
-        <li><strong>Role:</strong> 4th Year ECE Student</li>
-      </ul>
+    <section class="experience-section fade-up" id="experience">
+      <h2 class="section-title">02. Where I've Worked</h2>
+      <div class="experience-entry">
+        <h3>
+          <a href="https://amcapbizcon.com" target="_blank">AMCAP BIZCON</a>
+          <span>Jun 2025</span>
+        </h3>
+        <p class="role">Software Developer Intern · Mysuru, Karnataka</p>
+        <p class="desc">
+          Contributed to the design and development of client-facing web applications and internal interfaces during my front-end development internship at AMCAP BIZCON Business Consulting.
+        </p>
+      </div>
     </section>
 
-  <section class="experience-section fade-up" id="experience">
-  <h2>~$ work_experience</h2>
-  <div class="experience-entry">
-    <h3>
-      <a href="https://amcapbizcon.com" target="_blank" class="https://amcapbizcon.com/">
-        AMCAP BIZCON
-      </a>
-      <span>Jun 2025</span>
-    </h3>
-    <p class="role">Software Developer Intern · Mysuru, Karnataka</p>
-    <p class="desc">
-      Contributed to the design and development of client-facing web applications and internal interfaces during my front-end development internship at AMCAP BIZCON Business Consulting.
-    </p>
-  </div>
-</section>
-
-
     <section class="skills-section fade-up" id="skills">
-      <h2>~$ skills</h2>
+      <h2 class="section-title">03. Skills</h2>
       <div class="skills-grid">
         <span>Python</span><span>C++</span><span>FastAPI</span><span>Docker</span>
         <span>Git</span><span>MySQL</span><span>Linux</span><span>WebSockets</span>
@@ -67,7 +65,7 @@
     </section>
 
     <section class="projects-section fade-up" id="projects">
-      <h2>~$ projects</h2>
+      <h2 class="section-title">04. Projects</h2>
       <div class="project-grid">
         <a href="https://github.com/Sanjeev0506/auction" target="_blank" class="project-card">
           <img src="images/auction.png" alt="Auction App" />
@@ -86,33 +84,37 @@
         </a>
       </div>
     </section>
-<section class="contact-section fade-up" id="contact">
-  <h2>~$ connect</h2>
-  <div class="social-links">
-    <div class="social">
-      <a href="https://www.linkedin.com/in/sanjeevb1412/" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/33ff33/linkedin.png" alt="LinkedIn" />
-        <span>LinkedIn</span>
-      </a>
-    </div>
-    <div class="social">
-      <a href="https://github.com/Sanjeev0506" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/33ff33/github.png" alt="GitHub" />
-        <span>GitHub</span>
-      </a>
-    </div>
-    <div class="social">
-      <img src="https://img.icons8.com/ios-filled/50/33ff33/gmail.png" alt="Gmail" />
-      <span>sanjeevb0506@gmail.com</span>
-    </div>
-    <div class="social">
-      <img src="https://img.icons8.com/ios-filled/50/33ff33/phone.png" alt="Phone" />
-      <span>+91 6366040199 </span>
-    </div>
-  </div>
-</section>
-
     
+    <section class="contact-section fade-up" id="contact">
+      <h2 class="section-title">05. Connect</h2>
+      <p style="text-align: center;">I'm open to new opportunities. Let's build something great together.</p>
+      <div class="social-links">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/sanjeevb1412/" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/64ffda/linkedin.png" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/Sanjeev0506" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/64ffda/github.png" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="social">
+          <a href="mailto:sanjeevb0506@gmail.com">
+            <img src="https://img.icons8.com/ios-filled/50/64ffda/gmail.png" alt="Gmail" />
+            <span>sanjeevb0506@gmail.com</span>
+          </a>
+        </div>
+        <div class="social">
+          <a href="tel:+916366040199">
+            <img src="https://img.icons8.com/ios-filled/50/64ffda/phone.png" alt="Phone" />
+            <span>+91 6366040199</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="js/script.js"></script>
