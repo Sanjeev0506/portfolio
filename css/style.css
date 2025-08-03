@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --background-dark: #0f1011;
+  --background-dark: #0f0f0f;
   --text-primary: #e0e0e0;
   --text-secondary: #a0a0a0;
-  --accent-blue: #0077ff;
   --border-light: #2c2c2c;
   --card-background: #1a1a1a;
-  --highlight-color: #00bcd4; /* A vibrant cyan-blue for accents */
+  --highlight-color: #ffc107;
   --font-mono: 'Roboto Mono', monospace;
   --font-sans: 'Poppins', sans-serif;
 }
@@ -27,7 +26,6 @@ body {
   overflow-x: hidden;
 }
 
-/* particles.js background */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -61,7 +59,7 @@ header {
   left: 0;
   width: 100%;
   padding: 15px 50px;
-  background: rgba(15, 16, 17, 0.8);
+  background: rgba(15, 15, 15, 0.8);
   backdrop-filter: blur(10px);
   z-index: 1000;
   display: flex;
@@ -104,11 +102,8 @@ header {
 
 /* Intro Section */
 .intro-section {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  padding: 100px 0 60px;
   animation: fadeIn 1s ease-out forwards;
 }
 
@@ -153,7 +148,7 @@ header {
 }
 
 .btn:hover {
-  background: rgba(0, 188, 212, 0.1);
+  background: rgba(255, 193, 7, 0.1);
 }
 
 /* Sections */
