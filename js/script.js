@@ -1,23 +1,24 @@
 window.onload = () => {
+  // Re-implementing a subtle particles.js effect
   particlesJS("particles-js", {
     particles: {
-      number: { value: 80, density: { enable: true, value_area: 800 } },
-      color: { value: "#64ffda" },
+      number: { value: 30, density: { enable: true, value_area: 800 } },
+      color: { value: "#00bcd4" }, // Matches the new highlight color
       shape: { type: "circle" },
-      opacity: { value: 0.5, random: true },
-      size: { value: 3, random: true },
+      opacity: { value: 0.4, random: false, anim: { enable: false } },
+      size: { value: 3, random: true, anim: { enable: false } },
       line_linked: {
         enable: true,
-        distance: 150,
-        color: "#64ffda",
-        opacity: 0.4,
+        distance: 180,
+        color: "#2c2c2c", // A dark gray for links
+        opacity: 0.6,
         width: 1
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 1, // Slow, calm movement
         direction: "none",
-        random: false,
+        random: true,
         straight: false,
         out_mode: "out",
         bounce: false
@@ -27,17 +28,18 @@ window.onload = () => {
       detect_on: "canvas",
       events: {
         onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" },
+        onclick: { enable: false },
         resize: true
       },
       modes: {
-        grab: { distance: 180, line_linked: { opacity: 0.6 } },
+        grab: { distance: 150, line_linked: { opacity: 0.8 } },
         push: { particles_nb: 4 }
       }
     },
     retina_detect: true
   });
 
+  // Typewriter effect (unchanged)
   const texts = [
     "Web Developer",
     "Backend & Cloud Enthusiast",
@@ -50,7 +52,7 @@ window.onload = () => {
 
   function type() {
     const word = texts[i];
-    element.textContent = word.substring(0, j) + "|";
+    element.textContent = word.substring(0, j) + "_";
     if (!isDeleting) {
       j++;
       if (j > word.length) {
@@ -70,6 +72,7 @@ window.onload = () => {
 
   type();
 
+  // Scroll animations and navigation highlighting (unchanged)
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('header .nav-links a');
 
