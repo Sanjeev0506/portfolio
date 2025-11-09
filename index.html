@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjeev // Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
+  <style>
+    /* --- Floating View Counter --- */
+    #view-counter {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: rgba(20, 20, 20, 0.65);
+      border: 1px solid rgba(255, 193, 7, 0.3);
+      box-shadow: 0 0 15px rgba(255, 193, 7, 0.25);
+      backdrop-filter: blur(10px);
+      color: #ffc107;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+      border-radius: 14px;
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 999;
+    }
+
+    #view-counter:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.45);
+    }
+
+    #view-counter span {
+      font-weight: 600;
+    }
+
+    @keyframes pulse-glow {
+      0% { box-shadow: 0 0 10px rgba(255,193,7,0.3); }
+      50% { box-shadow: 0 0 18px rgba(255,193,7,0.55); }
+      100% { box-shadow: 0 0 10px rgba(255,193,7,0.3); }
+    }
+    #view-counter.glow {
+      animation: pulse-glow 2.5s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Intro -->
+    <section class="intro-section" id="home">
+      <p class="fade-up">Hi, my name is</p>
+      <h1 class="fade-up">Sanjeev Balasubramanian.</h1>
+      <p id="typewriter-text" class="tagline fade-up"></p>
+      <a href="#projects" class="btn fade-up">View My Work</a>
+    </section>
+
+    <!-- About -->
+    <section class="about-section fade-up" id="about">
+      <h2 class="section-title">01. About Me</h2>
+      <p>
+        I'm Sanjeev Balasubramanin, a Final Year ECE Student. I am passionate about building robust web applications and backend systems, with hands-on experience in cloud platforms, DevOps tools, and AI fundamentals. I enjoy tackling complex problems and crafting elegant, functional solutions. My recent work includes developing a real-time auction platform and an AI-powered trip planner. I am a highly adaptable and collaborative team player, eager to contribute my skills to innovative projects.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience-section fade-up" id="experience">
+      <h2 class="section-title">02. Where I've Worked</h2>
+
+      <!-- 1️⃣ Limat (Top) -->
+      <div class="experience-entry">
+        <h3>
+          <a href="#">Limat Soft Solutions Private Limited</a>
+        </h3>
+        <p class="role">Full Stack Developer Intern · Remote <span class="duration">Oct 2025 - Present</span></p>
+        <p class="desc">
+          Building and maintaining scalable web applications for client projects using Django and FastAPI. Implemented REST APIs, authentication, and cloud deployment pipelines on GCP. Focused on security, scalability, and performance optimization.
+        </p>
+      </div>
+
+      <!-- 2️⃣ Logic Leafs -->
+      <div class="experience-entry">
+        <h3>
+          <a href="#">MEGLLAHATI LOGIC LEAFS PRIVATE LIMITED</a>
+        </h3>
+        <p class="role">Full Stack Developer Intern · Remote <span class="duration">Aug - Oct 2025</span></p>
+        <p class="desc">
+          Redesigned and enhanced the company’s official website to improve UI/UX and performance. Worked on deploying and maintaining projects on cloud platforms with CI/CD pipelines. Contributed to both frontend and backend development to deliver scalable, production-ready features.
+        </p>
+      </div>
+
+      <!-- 3️⃣ Amcap (Bottom) -->
+      <div class="experience-entry">
+        <h3>
+          <a href="https://amcapbizcon.com" target="_blank">Amcap Business Consulting Private Limited</a>
+        </h3>
+        <p class="role">Software Developer Intern · Mysore, Karnataka <span class="duration">June - July 2025</span></p>
+        <p class="desc">
+          Contributed to the design and development of client-facing web applications and assisted in building responsive user interfaces for internal dashboards. Gained valuable experience with modern web technologies and agile collaboration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills-section fade-up" id="skills">
+      <h2 class="section-title">03. Skills</h2>
+      <div class="skills-category">
+        <h3>Languages</h3>
+        <div class="skills-grid">
+          <span>C++</span><span>Python</span><span>SQL</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Frameworks & Libraries</h3>
+        <div class="skills-grid">
+          <span>Django</span><span>FastAPI</span><span>Flask</span><span>Streamlit</span>
+          <span>NumPy</span><span>Pandas</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Backend Development</h3>
+        <div class="skills-grid">
+          <span>RESTful API Design</span><span>Database Integration (SQLite/MySQL)</span><span>JWT/OAuth</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Cloud & DevOps</h3>
+        <div class="skills-grid">
+          <span>Git</span><span>CI/CD</span><span>AWS (EC2, S3, Lambda, IAM, RDS)</span><span>GCP</span><span>Docker</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>AI & Automation</h3>
+        <div class="skills-grid">
+          <span>Prompt Engineering</span><span>API Integrations (OpenAI, GPT-based)</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Data & Analysis</h3>
+        <div class="skills-grid">
+          <span>SQL</span><span>Microsoft Excel (Pivot Tables, Reporting)</span><span>Google Sheets Automation</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>System & Networking</h3>
+        <div class="skills-grid">
+          <span>Linux Environments</span><span>TCP/IP Networking</span><span>Linux Terminal</span><span>Bash/zsh</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Languages Known</h3>
+        <div class="skills-grid">
+          <span>English</span><span>Kannada</span><span>Hindi</span><span>Tamil</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section fade-up" id="projects">
+      <h2 class="section-title">04. Projects</h2>
+      <div class="project-grid">
+        <a href="https://github.com/Sanjeev0506/auction" target="_blank" class="project-card">
+          <img src="images/auction.png" alt="Auction App" />
+          <h4>Auction App</h4>
+          <p>Real-time bidding with FastAPI, WebSockets, and Docker.</p>
+        </a>
+
+        <a href="https://instagrambio.streamlit.app/" target="_blank" class="project-card">
+          <img src="images/bio-generator.png" alt="Instagram Bio Generator" />
+          <h4>Instagram Bio Generator</h4>
+          <p>AI-powered bios with Together.ai and Streamlit.</p>
+        </a>
+
+        <a href="https://github.com/Sanjeev0506/aitrip" target="_blank" class="project-card">
+          <img src="images/trip-planner.png" alt="AI Trip Planner" />
+          <h4>AI Trip Planner</h4>
+          <p>Plan optimized trips using AI recommendations.</p>
+        </a>
+
+        <a href="https://stock-frontend-th01.onrender.com/" target="_blank" class="project-card">
+          <img src="https://placehold.co/280x180/0f0f0f/ffc107?text=Stock+App" alt="Stock Dashboard App" />
+          <h4>Stock Dashboard & AI Prediction</h4>
+          <p>A live stock dashboard with an AI model for predicting future stock prices.</p>
+        </a>
+
+        <a href="https://github.com/adityaa-0986/adobe-1b" target="_blank" class="project-card">
+          <img src="https://placehold.co/280x180/0f0f0f/ffc107?text=Adobe+Hackathon" alt="Adobe Hackathon Project" />
+          <h4>Persona-Driven Document Intelligence</h4>
+          <p>An intelligent document analyst that extracts and prioritizes relevant sections from PDFs based on user personas and job-to-be-done context.</p>
+        </a>
+
+        <a href="#" target="_blank" class="project-card">
+          <img src="https://placehold.co/280x180/0f0f0f/ffc107?text=Noise+Cancellation+Project" alt="Noise Cancellation Project" />
+          <h4>Noise Cancellation of Communication Devices using Deep Learning</h4>
+          <p>Engineered a real-time speech enhancement pipeline in Python using DeepFilterNet, validated with custom datasets to improve SNR, PESQ, and STOI scores.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section fade-up" id="contact">
+      <h2 class="section-title">05. Connect</h2>
+      <p style="text-align: center;">I'm open to new opportunities. Let's build something great together.</p>
+
+      <form id="contact-form" action="https://formspree.io/f/mldaradd" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="phone" placeholder="Your Phone Number" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn" id="submit-btn">Send Message</button>
+        <p id="form-status" style="text-align:center; margin-top:10px; font-family:var(--font-mono);"></p>
+      </form>
+
+      <div class="social-links">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/sanjeevb1412/" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffc107/linkedin.png" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/Sanjeev0506" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffc107/github.png" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="social">
+          <a href="mailto:sanjeevb0506@gmail.com">
+            <img src="https://img.icons8.com/ios-filled/50/ffc107/gmail.png" alt="Gmail" />
+            <span>sanjeevb0506@gmail.com</span>
+          </a>
+        </div>
+        <div class="social">
+          <a href="tel:+916366040199">
+            <img src="https://img.icons8.com/ios-filled/50/ffc107/phone.png" alt="Phone" />
+            <span>+91 6366040199</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating View Counter -->
+  <div id="view-counter" class="glow">
+    ✨ <span id="view-count">131</span> views
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
